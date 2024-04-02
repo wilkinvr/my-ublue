@@ -25,8 +25,8 @@ modules:
       - tailscale
       - code
     remove:
-      # example: removing firefox (in favor of the flatpak)
       - firefox
+      - firefox-langpacks
 
   - type: systemd
     system:
