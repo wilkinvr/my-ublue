@@ -5,7 +5,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-nvidia
-image-version: 39 # latest is also supported if you want new updates ASAP
+image-version: 40 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -22,12 +22,19 @@ modules:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       - tailscale
+      - firefox
+      - langpacks-en_GB
+      - langpacks-nl
     remove:
 
   - type: systemd
     system:
       enabled:
         - tailscaled
+
+  - type: bling
+    install:
+      - 1password
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -41,7 +48,6 @@ modules:
         - org.gnome.Loupe
         - org.gnome.gedit
         - org.gnome.clocks
-        - org.mozilla.firefox
         - org.mozilla.Thunderbird
         - org.onlyoffice.desktopeditors
         - md.obsidian.Obsidian
@@ -50,6 +56,6 @@ modules:
         - com.spotify.Client
         - com.nextcloud.desktopclient.nextcloud
       remove:
-        # - org.gnome.eog
+        - org.mozilla.firefox
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
