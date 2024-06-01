@@ -56,7 +56,7 @@ modules:
         - com.spotify.Client
         - com.nextcloud.desktopclient.nextcloud
         - de.haeckerfelix.Fragments
-      remove:
-        - org.mozilla.firefox
+        - com.valvesoftware.Steam
+        - com.usebottles.bottles
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
