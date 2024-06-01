@@ -55,6 +55,7 @@ modules:
         - com.discordapp.Discord
         - com.spotify.Client
         - com.nextcloud.desktopclient.nextcloud
+        - de.haeckerfelix.Fragments
       remove:
         - org.mozilla.firefox
 
