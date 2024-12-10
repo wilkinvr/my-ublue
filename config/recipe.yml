@@ -30,7 +30,7 @@ modules:
       - langpacks-nl
       - podman
       - toolbox
-    remove:
+    remove: []
 
   - type: systemd
     system:
