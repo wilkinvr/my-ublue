@@ -13,7 +13,7 @@ jobs:
     permissions:
       contents: write
     container:
-      image: fedora:40
+      image: fedora:41
       options: --privileged
     steps:
       - uses: actions/checkout@v4
@@ -23,7 +23,7 @@ jobs:
         with:
           image-name: ${{ github.event.repository.name }}
           installer-repo: releases
-          installer-major-version: 40
+          installer-major-version: 41
           boot-menu-path: boot_menu.yml
       - name: install github CLI
         run: |

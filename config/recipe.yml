@@ -30,6 +30,8 @@ modules:
       - langpacks-nl
       - podman
       - toolbox
+      - buildah
+      - skopeo
     remove: []
 
   - type: systemd
