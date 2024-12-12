@@ -72,5 +72,6 @@ modules:
         - md.obsidian.Obsidian
         - com.nextcloud.desktopclient.nextcloud
         - com.usebottles.bottles
+        - io.github.flattool.Warehouse
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
