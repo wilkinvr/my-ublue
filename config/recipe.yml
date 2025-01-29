@@ -25,6 +25,7 @@ modules:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://packages.microsoft.com/yumrepos/vscode/config.repo
       - https://mise.jdx.dev/rpm/mise.repo
+      - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
     install:
       - tailscale
       - firefox
@@ -37,6 +38,7 @@ modules:
       - skopeo
       - chromium
       - mise
+      - keyd
     remove: []
 
   - type: systemd
@@ -69,7 +71,6 @@ modules:
         - org.onlyoffice.desktopeditors
         - md.obsidian.Obsidian
         - com.nextcloud.desktopclient.nextcloud
-        - com.valvesoftware.Steam
         - com.usebottles.bottles
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
