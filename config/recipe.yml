@@ -39,16 +39,14 @@ modules:
       - chromium
       - mise
       - keyd
+      - 1password
+      - 1password-cli
     remove: []
 
   - type: systemd
     system:
       enabled:
         - tailscaled
-
-  - type: bling
-    install:
-      - 1password
 
   # Default flatpaks installed system-wide. User can install flatpaks in home as well
   - type: default-flatpaks
@@ -65,7 +63,6 @@ modules:
         - org.gnome.clocks
         - org.gnome.Calendar
         - org.gnome.Calculator
-        - org.gnome.gitlab.somas.Apostrophe
         - io.gitlab.news_flash.NewsFlash
         - org.gnome.Evolution
         - org.onlyoffice.desktopeditors
