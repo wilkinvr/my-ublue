@@ -39,7 +39,6 @@ modules:
       - chromium
       - mise
       - keyd
-      - steam
     remove: []
 
   - type: systemd
