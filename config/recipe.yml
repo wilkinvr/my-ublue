@@ -41,7 +41,8 @@ modules:
       - mise
       - keyd
       - cuda-toolkit
-    remove: []
+    remove: 
+      - libnpp-1
 
   - type: systemd
     system:
