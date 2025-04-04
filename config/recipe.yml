@@ -26,6 +26,7 @@ modules:
       - https://packages.microsoft.com/yumrepos/vscode/config.repo
       - https://mise.jdx.dev/rpm/mise.repo
       - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
+      - https://developer.download.nvidia.com/compute/cuda/repos/fedora%OS_VERSION%/x86_64/cuda-fedora%OS_VERSION%.repo
     install:
       - tailscale
       - firefox
@@ -39,6 +40,7 @@ modules:
       - chromium
       - mise
       - keyd
+      - cuda-toolkit
     remove: []
 
   - type: systemd
