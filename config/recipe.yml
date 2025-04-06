@@ -42,7 +42,7 @@ modules:
       - keyd
       - cuda-toolkit
     remove: 
-      - libnpp-1
+      - libnpp
 
   - type: systemd
     system:
