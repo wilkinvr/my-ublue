@@ -44,7 +44,7 @@ modules:
       - mise
       - keyd
       - cuda-toolkit
-      - eduvpn-client
+      # - eduvpn-client
     remove: []
 
   - type: systemd
