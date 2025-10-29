@@ -45,6 +45,7 @@ modules:
       - mise
       - keyd
       # - cuda-toolkit
+      - virt-manager
       # - eduvpn-client
     remove: []
 
