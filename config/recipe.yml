@@ -8,7 +8,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-nvidia
-image-version: 42 # latest is also supported if you want new updates ASAP
+image-version: 43 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -26,7 +26,7 @@ modules:
       - https://packages.microsoft.com/yumrepos/vscode/config.repo
       - https://mise.jdx.dev/rpm/mise.repo
       - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
-      - https://developer.download.nvidia.com/compute/cuda/repos/fedora%OS_VERSION%/x86_64/cuda-fedora%OS_VERSION%.repo
+      # - https://developer.download.nvidia.com/compute/cuda/repos/fedora%OS_VERSION%/x86_64/cuda-fedora%OS_VERSION%.repo
       - eduvpn.repo
     keys:
       - https://app.eduvpn.org/linux/v4/rpm/app+linux@eduvpn.org.asc
@@ -44,7 +44,7 @@ modules:
       - chromium
       - mise
       - keyd
-      - cuda-toolkit
+      # - cuda-toolkit
       - virt-manager
       # - eduvpn-client
     remove: []
