@@ -44,6 +44,13 @@ modules:
       - chromium
       - mise
       - keyd
+      ## Some native gnome applications:
+      - gnome-calculator
+      - gnome-calendar
+      - gnome-clocks
+      - gnome-text-editor
+      - loupe
+      - evince
       # - cuda-toolkit
       - virt-manager
       # - eduvpn-client
@@ -66,14 +73,6 @@ modules:
         repo:
           title: Flathub (system)
         install:
-          - org.gnome.Evince
-          - org.gnome.Loupe
-          - org.gnome.gedit
-          - org.gnome.clocks
-          - org.gnome.Calendar
-          - org.gnome.Calculator
-          - org.gnome.gitlab.somas.Apostrophe
-          - io.gitlab.news_flash.NewsFlash
           - org.gnome.Evolution
           - org.onlyoffice.desktopeditors
           - md.obsidian.Obsidian
