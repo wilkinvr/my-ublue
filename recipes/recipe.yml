@@ -18,18 +18,12 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  # Install evdi kernel module for DisplayLink support.
-  # evdi lives in the 'extra' akmods stream, which the built-in akmods module
-  # doesn't support. We use copy + containerfile snippets instead.
-  # - type: containerfile
-  #   snippets:
-  #     - COPY --from=ghcr.io/ublue-os/akmods-extra:ogc-43 /rpms/ /tmp/rpms-extra
-  #     - RUN find /tmp/rpms-extra
-  #     - RUN rpm-ostree install /tmp/rpms-extra/kmods/*evdi*.rpm && rm -rf /tmp/rpms-extra
-  
-  - type: akmods
-    install:
-      - evdi
+  - type: rpm-ostree
+    repos:
+      - https://negativo17.org/repos/fedora-multimedia.repo
+
+  - type: evdi-build
+    source: local
 
   - type: rpm-ostree
     repos: # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
@@ -65,7 +59,6 @@ modules:
       # - cuda-toolkit
       - virt-manager
       # - eduvpn-client
-      - displaylink
     remove: []
 
   - type: systemd
@@ -74,7 +67,6 @@ modules:
         - tailscaled
         - docker
         - containerd
-        - displaylink-driver
 
   - type: bling
     install:
