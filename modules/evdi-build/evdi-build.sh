@@ -48,6 +48,7 @@ ldconfig
 # Run depmod to register module
 depmod "${KERNEL_VERSION}"
 
+#TODO move following files to files?
 # Set up modprobe config
 mkdir -p /usr/lib/modprobe.d
 cat > /usr/lib/modprobe.d/evdi.conf << 'EOF'

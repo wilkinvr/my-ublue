@@ -22,7 +22,12 @@ modules:
     repos:
       - https://negativo17.org/repos/fedora-multimedia.repo
 
-  - type: evdi-build
+  - type: copy
+    from: ghcr.io/wilkinvr/displaylink-atomic:43
+    src: /artifacts
+    dest: /tmp/evdi-artifacts
+  
+  - type: evdi-install
     source: local
 
   - type: rpm-ostree
