@@ -1,0 +1,2 @@
+name: evdi-install
+shortdesc: Build and install the evdi kernel module from source for DisplayLink support
