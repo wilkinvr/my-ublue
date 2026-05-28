@@ -49,7 +49,9 @@ modules:
       - gnome-text-editor
       - loupe
       - evince
+      ## Funky VM setup
       - virt-manager
+      - redsocks
     remove: 
       - ptyxis
 
