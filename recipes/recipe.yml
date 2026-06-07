@@ -51,6 +51,8 @@ modules:
       - evince
       ## Funky VM setup
       - virt-manager
+      - swtpm
+      - swtpm-tools
       - redsocks
     remove: 
       - ptyxis
