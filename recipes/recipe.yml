@@ -26,7 +26,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/scottames/ghostty/repo/fedora-%OS_VERSION%/scottames-ghostty-fedora-%OS_VERSION%.repo
       - eduvpn.repo
-      - FirefoxPWA.repo
+      - firefoxpwa.repo
     keys:
       - https://app.eduvpn.org/linux/v4/rpm/app+linux@eduvpn.org.asc
     install:
@@ -39,6 +39,8 @@ modules:
       - podman
       - buildah
       - skopeo
+      - podman-compose
+      - podman-docker
       - mise
       - keyd
       - eduvpn-client

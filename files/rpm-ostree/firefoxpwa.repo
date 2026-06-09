@@ -1,7 +1,7 @@
 [firefoxpwa]
 name=FirefoxPWA
 metadata_expire=7d
-baseurl=https://packagecloud.io/filips/FirefoxPWA/rpm_any/rpm_any/\$basearch
+baseurl=https://packagecloud.io/filips/FirefoxPWA/rpm_any/rpm_any/$basearch
 gpgkey=https://packagecloud.io/filips/FirefoxPWA/gpgkey
        https://packagecloud.io/filips/FirefoxPWA/gpgkey/filips-FirefoxPWA-912AD9BE47FEB404.pub.gpg
 repo_gpgcheck=1
