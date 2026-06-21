@@ -18,6 +18,9 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  - type: evdi
+    source: ghcr.io/wilkinvr/displaylink-atomic:43
+
   - type: rpm-ostree
     repos:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
