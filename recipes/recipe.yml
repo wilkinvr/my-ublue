@@ -62,8 +62,14 @@ modules:
       - swtpm
       - swtpm-tools
       - redsocks
+      ## Windows 95 boot theme sound playback
+      - pipewire-utils
     remove: 
       - ptyxis
+
+  - type: script
+    scripts:
+      - win95-boot-theme.sh
 
   - type: systemd
     system:

@@ -1,0 +1,10 @@
+[Unit]
+Description=Play Windows 95 startup sound
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/pw-play /usr/share/sounds/win95/startup.ogg
+
+[Install]
+WantedBy=graphical-session.target

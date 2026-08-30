@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Windows 95 Boot
+Description=Windows 95 style boot screen
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/win95boot
+ScriptFile=/usr/share/plymouth/themes/win95boot/win95boot.script
