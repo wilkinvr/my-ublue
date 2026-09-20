@@ -33,6 +33,7 @@ modules:
     keys:
       - https://app.eduvpn.org/linux/v4/rpm/app+linux@eduvpn.org.asc
     install:
+      ## Essential
       - ghostty
       - tailscale
       - firefox
@@ -62,7 +63,9 @@ modules:
       - swtpm
       - swtpm-tools
       - redsocks
-    remove: 
+      ## Other
+      - ollama
+    remove:
       - ptyxis
 
   - type: systemd
